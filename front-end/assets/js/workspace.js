@@ -31,6 +31,7 @@ function createWorkspace() {
 }
 
 function selectWorkspace(id) {
+  emailDeadlineAlerts();
   currentWorkspace = id;
   renderTasks();
 }
@@ -45,18 +46,12 @@ function addWorkspaceEvents(element, id) {
     input.focus();
   });
 
-  input.addEventListener("blur", () => {
-    input.readOnly = true;
-  });
-  input.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") input.blur();
-  });
+  input.addEventListener("blur", () => { input.readOnly = true; });
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter") input.blur(); });
 }
 
 // INIT
-document
-  .getElementById("btn-add-aside")
-  .addEventListener("click", createWorkspace);
+document.getElementById("btn-add-aside").addEventListener("click", createWorkspace);
 document.getElementById("btn-trash").addEventListener("click", () => {
   deleteMode = !deleteMode;
   document.body.classList.toggle("delete-mode");
