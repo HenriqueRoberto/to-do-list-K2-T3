@@ -1,12 +1,15 @@
 package app;
 
 import controller.TaskController;
+import service.TaskService;
 import view.MenuView;
 
 public class Main {
   public static void main(String[] args) {
-    TaskController controller = new TaskController();
-    MenuView menu = new MenuView(controller);
-    menu.start();
+    TaskService    service    = new TaskService();
+    TaskController controller = new TaskController(service);
+    MenuView       view       = new MenuView(controller);
+    controller.setView(view);
+    view.start();
   }
 }
