@@ -43,6 +43,9 @@ document.querySelectorAll(".dropdown-menu")[1].querySelectorAll(".dropdown-item"
   });
 });
 
+const workspaces = {};
+let currentWorkspace = null;
+
 //POPULATE CATEGORIES FILTER
 function updateCategoryDropdown() {
   const menu = document.querySelectorAll(".dropdown-menu")[0];
@@ -83,9 +86,6 @@ function updateCategoryDropdown() {
 
 const btnAddAside = document.getElementById("btn-add-aside");
 const workspaceArea = document.getElementById("workspace-area");
-
-let workspaces = {};
-let currentWorkspace = null;
 
 // CRIAR WORKSPACE
 function createWorkspace() {

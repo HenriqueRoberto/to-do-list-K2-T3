@@ -1,4 +1,4 @@
-package br.com.henriqueroberto.zghero.todo.model;
+package model;
 
 public enum TaskStatus {
   TODO,

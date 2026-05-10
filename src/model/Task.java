@@ -1,4 +1,4 @@
-package br.com.henriqueroberto.zghero.todo.model;
+package model;
 
 import java.time.LocalDate;
 

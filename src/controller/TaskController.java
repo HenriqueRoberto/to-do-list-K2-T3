@@ -1,7 +1,7 @@
-package br.com.henriqueroberto.zghero.todo.controller;
+package controller;
 
-import br.com.henriqueroberto.zghero.todo.model.Task;
-import br.com.henriqueroberto.zghero.todo.model.TaskStatus;
+import model.Task;
+import model.TaskStatus;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

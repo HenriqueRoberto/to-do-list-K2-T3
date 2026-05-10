@@ -1,7 +1,7 @@
-package br.com.henriqueroberto.zghero.todo.app;
+package app;
 
-import br.com.henriqueroberto.zghero.todo.controller.TaskController;
-import br.com.henriqueroberto.zghero.todo.view.MenuView;
+import controller.TaskController;
+import view.MenuView;
 
 public class Main {
   public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package br.com.henriqueroberto.zghero.todo.view;
+package view;
 
-import br.com.henriqueroberto.zghero.todo.controller.TaskController;
-import br.com.henriqueroberto.zghero.todo.model.Task;
-import br.com.henriqueroberto.zghero.todo.model.TaskStatus;
+import controller.TaskController;
+import model.Task;
+import model.TaskStatus;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
